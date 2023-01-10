@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&family=Roboto&display=swap');
+
 .App {
   text-align: center;
 }
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #121212;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,8 +26,15 @@
   color: white;
 }
 
-.App-link {
+.App-link1 {
+  color: white;
+  font-size: 18px;
+}
+
+.App-link2 {
   color: #61dafb;
+  font-size: 18px;
+  margin-left: 5px;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +45,53 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  font-family: Questrial;
+}
+
+h1 {
+  color: white;
+  font-size: 38px;
+  margin-left: 5px;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  margin-left: 5px;
+}
+
+.btn {
+  font-size: 22px;
+  background-color: black;
+  border-color: white;
+  padding: 15px;
+  color: white;
+}
+
+.PlayTrack {
+  padding-top: 100px;
+}
+
+.uys {
+  color: white;
+  font-size: 12px;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+a {
+  color: white;
+  font-size: 16px;
+}
+
+audio {
+  width: 250px;
+  margin-top: 45px;
+}
+
