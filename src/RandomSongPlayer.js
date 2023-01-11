@@ -16,7 +16,7 @@ export default function RandomSongButton() {
 
   return (
     <div>
-      <button onClick={fetchRandomSong}>Play random song</button>
+      
       {song && (
         <div>
           <h1>{song.title}</h1>
@@ -24,6 +24,8 @@ export default function RandomSongButton() {
           <audio controls src={song.file} preload="auto" autoPlay />
         </div>
       )}
+      <br></br>
+      <button onClick={fetchRandomSong} className="btn">Click to discover</button>
     </div>
   );
 }
