@@ -3,6 +3,8 @@ import './App.css';
 import React from 'react';
 import PlayTrack from './PlayTrack';
 import UYS from './UYS';
+// import RandomSongPlayer from './RandomSongPlayer';
+import RandomSongButton from './RandomSongPlayer';
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <header className="App-header">
         {/* <Hello /> */}
         <PlayTrack />
+        <RandomSongButton />
         <UYS />
       </header>
     </div>
