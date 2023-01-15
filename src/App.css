@@ -62,13 +62,12 @@ h2 {
   margin-left: 5px;
 }
 
-.btn {
+/* .btn {
   font-size: 22px;
   background-color: black;
-  border-color: white;
   padding: 15px;
   color: white;
-}
+} */
 
 .PlayTrack {
   padding-top: 100px;
@@ -95,3 +94,13 @@ audio {
   margin-top: 45px;
 }
 
+.play {
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  /* padding: 10px; */
+}

@@ -6,11 +6,11 @@ class UYS extends React.Component {
       return (
         <div>
             <br></br>
-            <p>Submit <a 
+            {/* <p>Submit <a 
               href="https://unlockyoursound.com/submit/" 
               target="_blank" 
               rel="noreferrer">Music</a>
-            </p>
+            </p> */}
             <p 
               className="uys">powered by <a 
               href="https://unlockyoursound.com/" 
