@@ -12,8 +12,6 @@ class PlayTrack extends React.Component {
     };
   }
 
-  // TODO ADD LOADING STATE
-
   getSong() {
     const randomNumber = Math.round(Math.random() * 2 + 1);
     console.log(randomNumber);
@@ -46,13 +44,6 @@ class PlayTrack extends React.Component {
               controls
               controlsList="nodownload noplaybackrate"
             />
-            {/* <button onclick={document.getElementById('audio1').play()}>Play</button> 
-                <button onclick={document.getElementById('audio1').pause()}>Pause</button>  */}
-            {/* <button onclick="document.getElementById('audio1').volume += 0.1">Vol +</button> 
-                <button onclick="document.getElementById('audio1').volume -= 0.1">Vol -</button>  */}
-            {/* <button onclick="playAudio()" type="button">Play Audio</button>
-              <button onclick="pauseAudio()" type="button">Pause Audio</button>  */}
-            {/* <button onClick={sound.play()}>HELLO</button> */}
           </div>
         )}
         <br></br>
@@ -60,7 +51,6 @@ class PlayTrack extends React.Component {
           Click to discover
         </button>
         <br></br>
-        {/* <a onClick="togglePlay()">toggle play</a> */}
       </div>
     );
   }

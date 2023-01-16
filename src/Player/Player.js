@@ -3,8 +3,8 @@ import { useAudioPlayer } from "react-use-audio-player";
 import { Center, Square } from "@chakra-ui/react";
 import { BiPlay } from "react-icons/bi";
 import { AiOutlinePause } from "react-icons/ai";
-import { AudioPlayerProvider } from "react-use-audio-player";
-// import { ChakraProvider } from '@chakra-ui/react'
+// import { AudioPlayerProvider } from "react-use-audio-player";
+// // import { ChakraProvider } from '@chakra-ui/react'
 
 const AudioPlayer = ({ file }) => {
   const { togglePlayPause, ready, loading, playing } = useAudioPlayer({
