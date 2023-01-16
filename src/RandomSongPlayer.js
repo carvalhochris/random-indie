@@ -6,20 +6,23 @@ import { Button  } from '@chakra-ui/react'
 
 export default function RandomSongButton() {
   const [song, setSong] = useState(null);
+  const [loading, setLoading] = useState(false); // add this line
 
   const fetchRandomSong = async () => {
     try {
       const response = await axios.get('https://warm-gorge-84676.herokuapp.com/random_song/');
       const song = response.data;
       setSong(song);
+      setLoading(false); // set loading to false after song is fetched
     } catch (error) {
       console.error(error);
+      setLoading(false); // set loading to false after an error
     }
   };
 
   return (
     <div>
-      
+      {loading && <p>Loading...</p>}
       {song && (
         <div>
           <h1>{song.title}</h1>
