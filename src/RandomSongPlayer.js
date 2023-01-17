@@ -26,7 +26,9 @@ export default function RandomSongButton() {
       {!loading && song && (
         <div>
           <h1>{song.title}</h1>
-          <p>{song.artist}</p>
+          {/* <p>{song.artist}</p> */}
+          <br></br>
+          <p>by <a href={song.link} target='#'><u>{song.artist}</u></a></p>
           <br></br>
           <AudioPlayer file={song.file} />
         </div>
