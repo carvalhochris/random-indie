@@ -8,6 +8,7 @@ export default function RandomSongButton() {
   const [loading, setLoading] = useState(false); 
 
   const fetchRandomSong = async () => {
+    setLoading(true); // set loading to true before fetching song
     try {
       const response = await axios.get('https://warm-gorge-84676.herokuapp.com/random_song/');
       const song = response.data;
@@ -22,7 +23,7 @@ export default function RandomSongButton() {
   return (
     <div>
       {loading && <p>Loading...</p>}
-      {song && (
+      {!loading && song && (
         <div>
           <h1>{song.title}</h1>
           <p>{song.artist}</p>
@@ -35,4 +36,5 @@ export default function RandomSongButton() {
         
     </div>
   );
+
 }
