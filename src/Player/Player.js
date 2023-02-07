@@ -20,16 +20,16 @@ const AudioPlayer = ({ file }) => {
   return (
     <div>
       <Center>
-        <Square
-          size="80px"
-          bg="#161616"
-          color="white"
-          marginTop="10px"
-          marginBottom="5px"
-          borderStyle="dotted"
-          borderWidth="1px"
-        >
-          <button onClick={togglePlayPause}>
+        <button onClick={togglePlayPause}>
+          <Square
+            size="80px"
+            bg="#161616"
+            color="white"
+            marginTop="10px"
+            marginBottom="5px"
+            borderStyle="dotted"
+            borderWidth="1px"
+          >
             {playing ? (
               // <div>
               <AiOutlinePause />
@@ -39,8 +39,8 @@ const AudioPlayer = ({ file }) => {
               <BiPlay />
               // </div>
             )}
-          </button>
-        </Square>
+          </Square>
+        </button>
       </Center>
     </div>
   );
